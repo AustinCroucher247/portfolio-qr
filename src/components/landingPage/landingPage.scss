@@ -51,7 +51,7 @@ h1 {
     width: 88px;
     height: 125px;
     will-change: background-position;
-
+    overflow: hidden;
     animation-name: fly-cycle;
     animation-timing-function: steps(10);
     animation-iteration-count: infinite;
@@ -59,20 +59,28 @@ h1 {
     &--one {
         animation-duration: 1s;
         animation-delay: -0.5s;
+        overflow: hidden;
+
     }
 
     &--two {
         animation-duration: 0.9s;
+        overflow: hidden;
+
         animation-delay: -0.75s;
     }
 
     &--three {
         animation-duration: 1.25s;
+        overflow: hidden;
+
         animation-delay: -0.25s;
     }
 
     &--four {
         animation-duration: 1.1s;
+        overflow: hidden;
+
         animation-delay: -0.5s;
     }
 
@@ -84,7 +92,7 @@ h1 {
     left: -10%;
     transform: scale(0) translateX(-10vw);
     will-change: transform;
-
+    overflow: hidden;
     animation-name: fly-right-one;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
@@ -92,21 +100,25 @@ h1 {
     &--one {
         animation-duration: 15s;
         animation-delay: 0;
+        overflow: hidden;
     }
 
     &--two {
         animation-duration: 16s;
         animation-delay: 1s;
+        overflow: hidden;
     }
 
     &--three {
         animation-duration: 14.6s;
         animation-delay: 9.5s;
+        overflow: hidden;
     }
 
     &--four {
         animation-duration: 16s;
         animation-delay: 10.25s;
+        overflow: hidden;
     }
 
 }
@@ -234,6 +246,10 @@ h1 {
 .banner--third {
     opacity: 0; // initially hide the banners
     animation: floatIn 1s ease-out 2s forwards; // start the animation after 1 second
-    margin-top: 8rem;
+    margin-top: 10rem;
     margin-left: 1.3rem;
+}
+
+body {
+    overflow: hidden;
 }
