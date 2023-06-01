@@ -220,6 +220,8 @@ h1 {
     opacity: 0; // initially hide the banners
     animation: floatIn 1s ease-out 1s forwards; // start the animation after 1 second
     padding-left: .3rem;
+    width: 90%;
+    margin-left: 1.2rem;
 }
 
 .banner--second {
@@ -232,6 +234,6 @@ h1 {
 .banner--third {
     opacity: 0; // initially hide the banners
     animation: floatIn 1s ease-out 2s forwards; // start the animation after 1 second
-    margin-top: 15rem;
+    margin-top: 8rem;
     margin-left: 1.3rem;
 }
