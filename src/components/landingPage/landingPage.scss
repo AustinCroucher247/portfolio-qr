@@ -18,14 +18,7 @@ body {
     background-position: center;
 }
 
-.profilePic {
-    width: 50%;
-    border-radius: 50%;
 
-    @include tablet {
-        width: 10%;
-    }
-}
 
 @import url('https://fonts.googleapis.com/css?family=Arima+Madurai:300');
 

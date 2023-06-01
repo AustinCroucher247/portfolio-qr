@@ -1,4 +1,5 @@
 import './landingPage.scss'
+import { Link } from 'react-router-dom';
 import banner from "../../assets-portfolio-qr/banner-text.png";
 import banner1 from "../../assets-portfolio-qr/banner-text-1.png";
 import austinPort from "../../assets-portfolio-qr/austinport.png"
@@ -7,10 +8,10 @@ function LandingPage() {
         <>
             <div className='landing--top'>
                 <img className='banner--first' src={austinPort} alt="" />
-                {/* <div className='banner--container'> */}
                 <img className='banner banner--third' src={banner} alt="banner" />
-                <img className='banner banner--second' src={banner1} alt="banner" />
-                {/* </div> */}
+                <Link to='./nonInteractive'>
+                    <img className='banner banner--second' src={banner1} alt="banner" />
+                </Link>
                 <div class="container">
                     <div class="bird-container bird-container--one">
                         <div class="bird bird--one"></div>
