@@ -7,6 +7,9 @@
 body {
     padding: 00;
     margin: 0;
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
 }
 
 .landing--top {

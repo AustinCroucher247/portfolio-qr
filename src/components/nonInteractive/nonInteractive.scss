@@ -131,22 +131,10 @@
         hide-caret 0.1s forwards 0.5s;
 }
 
-.background--img--non {
-    position: fixed;
-    background-image: url('../../assets-portfolio-qr/flappyBack.jpg');
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-    overflow: hidden;
-    background-position: center;
-    opacity: 1;
-    transition: opacity 0.5s ease-in-out;
-}
-
+.background--img--non,
 .aboutMe {
-    position: absolute;
-    top: 100vh;
-    /* Initially positioned outside the viewport */
+    /* These are the children that will be snapped */
+    scroll-snap-align: start;
+    height: 100vh;
     width: 100%;
-    /* rest of your styles... */
 }

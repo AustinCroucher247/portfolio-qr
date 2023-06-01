@@ -27,7 +27,7 @@ function NonInteractive() {
                     <div className='profile--container'>
                         <img className='profilePic' src={profilePic} alt="" />
                     </div>
-                    <h1 className='landing-page-text--scroll'>Scroll down to see about me!</h1>
+                    <h1 className='landing-page-text--scroll'>Scroll up to see about me!</h1>
                 </div>
             </div>
             <section className='aboutMe'>
