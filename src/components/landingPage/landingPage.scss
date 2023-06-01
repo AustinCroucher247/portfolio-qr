@@ -198,8 +198,9 @@ h1 {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding-top: 17rem;
-    margin-left: 2.5rem;
+    margin-top: 17rem;
+    margin-left: 1.5rem;
+    width: 100%;
 }
 
 @keyframes floatIn {
@@ -223,9 +224,13 @@ h1 {
 .banner--second {
     opacity: 0; // initially hide the banners
     animation: floatIn 1.5s ease-out 3s forwards; // start the animation 1 second after the first banner
+    margin-left: 1.3rem;
+
 }
 
 .banner--third {
     opacity: 0; // initially hide the banners
     animation: floatIn 1s ease-out 2s forwards; // start the animation after 1 second
+    margin-top: 15rem;
+    margin-left: 1.3rem;
 }
