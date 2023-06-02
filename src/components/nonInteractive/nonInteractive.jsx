@@ -15,6 +15,7 @@ import ReactImg from '../../assets-portfolio-qr/react.png'
 import SASS from '../../assets-portfolio-qr/sass.png'
 import MySQL from '../../assets-portfolio-qr/mysql.png'
 import Git from '../../assets-portfolio-qr/git.png'
+import projects from '../../assets-portfolio-qr/projects.png'
 // import dino2 from '../../assets-portfolio-qr/dino2.png'
 // import dino3 from '../../assets-portfolio-qr/dino3.png'
 // import noDino from '../../assets-portfolio-qr/noDino.png'
@@ -126,6 +127,9 @@ function NonInteractive() {
                         <img className='icons' src={MySQL} alt="" />
                         <img className='icons' src={Git} alt="" />
                         <img className='icons' src={SASS} alt="" />
+                    </div>
+                    <div>
+                        <img className='projects--banner' src={projects} alt="" />
                     </div>
                 </section>
             </Parallax>
