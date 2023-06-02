@@ -39,32 +39,36 @@ function NonInteractive() {
                     </div>
 
                 </ParallaxLayer>
+
                 <ParallaxLayer offset={0.99} speed={0.5}
                     style={{
                         backgroundImage: `url(${flappyBack})`,
                         backgroundSize: 'cover'
                     }}
-                >
-                    <section className='aboutMe'>
-                        <div class="container">
-                            <div class="bird-container bird-container--one">
-                                <div class="bird bird--one"></div>
-                            </div>
-
-                            <div class="bird-container bird-container--two">
-                                <div class="bird bird--two"></div>
-                            </div>
-
-                            <div class="bird-container bird-container--three">
-                                <div class="bird bird--three"></div>
-                            </div>
-
-                            <div class="bird-container bird-container--four">
-                                <div class="bird bird--four"></div>
-                            </div>
-
+                >                            <div class="container">
+                        <div class="bird-container bird-container--one">
+                            <div class="bird bird--one"></div>
                         </div>
+
+                        <div class="bird-container bird-container--two">
+                            <div class="bird bird--two"></div>
+                        </div>
+
+                        <div class="bird-container bird-container--three">
+                            <div class="bird bird--three"></div>
+                        </div>
+
+                        <div class="bird-container bird-container--four">
+                            <div class="bird bird--four"></div>
+                        </div>
+
+                    </div>
+
+                    <section className='aboutMe'>
+
                         <div className='text--section'>
+                            <h3 className='about'>ABOUT ME</h3>
+
                             <p className='about--me--text'>
                                 My name is Austin Croucher and I am a graduate of both the Philosophy and History programs
                                 at York University with a certificate in conflict resolution and dispute management. After
@@ -72,7 +76,7 @@ function NonInteractive() {
                                 After a few years in this position, I realized I wanted to challenge myself more intellectually, and given
                                 my pre-existing interest in the tech industry, it seemed a shift into software engineering would be a good fit.
                             </p>
-                            <br /><br /><br />                        <br />
+
                             <p className='about--me--text'>
                                 I made the decision to leave and pursued an education in software engineering through BrainStation.
                                 I believe that my educational background, as well as my professional background, will work together for a
@@ -82,18 +86,7 @@ function NonInteractive() {
                                 given the innate logical nature of coding.
                             </p>
                         </div>
-                        <h3 className='skillset'>SKILLSET</h3>
 
-                        <div className='skill--icon--container'>
-                            <img src={HTML} className='skill--image' alt='HTML' />
-                            <img src={CSS} className='skill--image' alt='CSS' />
-                            <img src={JavaScript} className='skill--image' alt='Javascript' />
-                            <img src={ReactImg} className='skill--image' alt='React' />
-                            <img src={Node} className='skill--image' alt='Node' />
-                            <img src={SASS} className='skill--image' alt='SASS' />
-                            <img src={Git} className='skill--image' alt='Git' />
-                            <img src={MySQL} className='skill--image' alt='MySQL' />
-                        </div>
                     </section>
 
                 </ParallaxLayer>
@@ -103,7 +96,18 @@ function NonInteractive() {
                         backgroundSize: 'contain'
                     }}
                 >
+                    <h3 className='skillset'>SKILLSET</h3>
 
+                    <div className='skill--icon--container'>
+                        <img src={HTML} className='skill--image' alt='HTML' />
+                        <img src={CSS} className='skill--image' alt='CSS' />
+                        <img src={JavaScript} className='skill--image' alt='Javascript' />
+                        <img src={ReactImg} className='skill--image' alt='React' />
+                        <img src={Node} className='skill--image' alt='Node' />
+                        <img src={SASS} className='skill--image' alt='SASS' />
+                        <img src={Git} className='skill--image' alt='Git' />
+                        <img src={MySQL} className='skill--image' alt='MySQL' />
+                    </div>
                 </ParallaxLayer>
             </Parallax>
         </>
