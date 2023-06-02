@@ -1,6 +1,6 @@
 import './nonInteractive.scss';
 import React, { useState, useEffect } from 'react';
-
+import { Link } from 'react-router-dom';
 import profilePic from "../../assets-portfolio-qr/ProfilePic.jpg";
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import clouds from '../../assets-portfolio-qr/cloudsMOving.png';
@@ -153,7 +153,9 @@ function NonInteractive() {
 
                     </div>
                     <div>
-                        <img className={`projects--banner ${shouldScroll ? "visibleSkillBanner scrollDownBanner" : ""}`} src={projects} alt="" />
+                        <Link to='./projects'>
+                            <img className={`projects--banner ${shouldScroll ? "visibleSkillBanner scrollDownBanner" : ""}`} src={projects} alt="" />
+                        </Link>
                     </div>
                     <div>
                         <img className={`projects--banner ${shouldScroll ? "visibleSkillBanner scrollDownContact" : ""}`} src={contact} alt="" />

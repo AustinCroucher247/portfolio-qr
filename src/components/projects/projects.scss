@@ -1,0 +1,36 @@
+.banner--projects--page {
+    width: 90%;
+    margin-top: 1rem;
+}
+
+.project--page--container {
+    display: flex;
+    justify-content: center;
+}
+
+.project--thumbnail {
+    width: 300px;
+    border-radius: 10px;
+    border: 2px solid goldenrod;
+    height: 175px;
+    margin-top: 5rem;
+}
+
+.project--card {
+    width: 80%;
+    margin: 0 auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+.background--image {
+    background-image: url('../../assets-portfolio-qr/flappy4.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.project--decription {
+
+    color: rgb(244, 189, 50)
+}
