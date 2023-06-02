@@ -12,12 +12,14 @@ import ReactImg from '../../assets-portfolio-qr/react.png'
 import SASS from '../../assets-portfolio-qr/sass.png'
 import MySQL from '../../assets-portfolio-qr/mysql.png'
 import Git from '../../assets-portfolio-qr/git.png'
+import dino2 from '../../assets-portfolio-qr/dino2.png'
+import dino3 from '../../assets-portfolio-qr/dino3.png'
 
 
 function NonInteractive() {
     return (
         <>
-            <Parallax pages={4}>
+            <Parallax pages={5}>
                 <ParallaxLayer
                     speed={-0.2}
                     style={{
@@ -90,14 +92,13 @@ function NonInteractive() {
                     </section>
 
                 </ParallaxLayer>
-                <ParallaxLayer offset={1.4} speed={0.5}
+                <ParallaxLayer offset={1.38} speed={0.9}
                     style={{
                         backgroundImage: `url(${dino})`,
                         backgroundSize: 'contain'
                     }}
                 >
                     <h3 className='skillset'>SKILLSET</h3>
-
                     <div className='skill--icon--container'>
                         <img src={HTML} className='skill--image' alt='HTML' />
                         <img src={CSS} className='skill--image' alt='CSS' />
@@ -108,6 +109,20 @@ function NonInteractive() {
                         <img src={Git} className='skill--image' alt='Git' />
                         <img src={MySQL} className='skill--image' alt='MySQL' />
                     </div>
+                </ParallaxLayer>
+                <ParallaxLayer offset={1.78} speed={0.9}
+                    style={{
+                        backgroundImage: `url(${dino2})`,
+                        backgroundSize: 'contain'
+                    }}
+                >
+                </ParallaxLayer>
+                <ParallaxLayer offset={1.97} speed={0.9}
+                    style={{
+                        backgroundImage: `url(${dino3})`,
+                        backgroundSize: 'contain'
+                    }}
+                >
                 </ParallaxLayer>
             </Parallax>
         </>
