@@ -16,6 +16,7 @@ import SASS from '../../assets-portfolio-qr/sass.png'
 import MySQL from '../../assets-portfolio-qr/mysql.png'
 import Git from '../../assets-portfolio-qr/git.png'
 import projects from '../../assets-portfolio-qr/projects.png'
+import contact from "../../assets-portfolio-qr/contactBanner.png"
 // import dino2 from '../../assets-portfolio-qr/dino2.png'
 // import dino3 from '../../assets-portfolio-qr/dino3.png'
 // import noDino from '../../assets-portfolio-qr/noDino.png'
@@ -128,8 +129,9 @@ function NonInteractive() {
                                     analytical thought processes formed throughout my philosophy degree will transition well into programming,
                                     given the innate logical nature of coding.
                                 </p>
+                                <button onClick={() => setShouldScroll(true)}>next</button>
+
                             </div>
-                            <button onClick={() => setShouldScroll(true)}>next</button>
                         </section>
                     )}
                 </ParallaxLayer>
@@ -147,6 +149,9 @@ function NonInteractive() {
                     </div>
                     <div>
                         <img className={`projects--banner ${shouldScroll ? "visibleSkillBanner scrollDownBanner" : ""}`} src={projects} alt="" />
+                    </div>
+                    <div>
+                        <img className={`projects--banner ${shouldScroll ? "visibleSkillBanner scrollDownContact" : ""}`} src={contact} alt="" />
                     </div>
                 </section>
             </Parallax>
