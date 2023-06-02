@@ -23,6 +23,7 @@ import projects from '../../assets-portfolio-qr/projects.png'
 
 function NonInteractive() {
     const [showText, setShowText] = useState(true);
+    const [shouldScroll, setShouldScroll] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -107,7 +108,7 @@ function NonInteractive() {
                         </div>
                     </div>
                     {showText && (
-                        <section className='aboutMe'>
+                        <section className={`aboutMe ${shouldScroll ? "scrollUpText" : ""}`}>
                             <div className='text--section'>
                                 <h3 className='about'>ABOUT ME</h3>
 
@@ -128,23 +129,24 @@ function NonInteractive() {
                                     given the innate logical nature of coding.
                                 </p>
                             </div>
+                            <button onClick={() => setShouldScroll(true)}>next</button>
                         </section>
                     )}
                 </ParallaxLayer>
                 <section className='skillset--section'>
-                    <img className='skill--banner' src={skillSet} alt="" />
-                    <div className='icon--container'>
-                        <img className='icons' src={HTML} alt="" />
-                        <img className='icons' src={CSS1} alt="" />
-                        <img className='icons' src={JavaScript} alt="" />
-                        <img className='icons' src={Node} alt="" />
-                        <img className='icons' src={ReactImg} alt="" />
-                        <img className='icons' src={MySQL} alt="" />
-                        <img className='icons' src={Git} alt="" />
-                        <img className='icons' src={SASS} alt="" />
+                    <img className={`skill--banner ${shouldScroll ? "visibleSkillBanner scrollUpSkillset" : ""}`} src={skillSet} alt="" />
+                    <div className={`icon--container ${shouldScroll ? "scrollUpIcons" : ""}`}>
+                        <img className={`icons ${shouldScroll ? "visibleIcon" : ""}`} src={HTML} alt="" />
+                        <img className={`icons ${shouldScroll ? "visibleIcon" : ""}`} src={CSS1} alt="" />
+                        <img className={`icons ${shouldScroll ? "visibleIcon" : ""}`} src={JavaScript} alt="" />
+                        <img className={`icons ${shouldScroll ? "visibleIcon" : ""}`} src={Node} alt="" />
+                        <img className={`icons ${shouldScroll ? "visibleIcon" : ""}`} src={ReactImg} alt="" />
+                        <img className={`icons ${shouldScroll ? "visibleIcon" : ""}`} src={MySQL} alt="" />
+                        <img className={`icons ${shouldScroll ? "visibleIcon" : ""}`} src={Git} alt="" />
+                        <img className={`icons ${shouldScroll ? "visibleIcon" : ""}`} src={SASS} alt="" />
                     </div>
                     <div>
-                        <img className='projects--banner' src={projects} alt="" />
+                        <img className={`projects--banner ${shouldScroll ? "visibleSkillBanner scrollDownBanner" : ""}`} src={projects} alt="" />
                     </div>
                 </section>
             </Parallax>
