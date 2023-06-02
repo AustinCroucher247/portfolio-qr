@@ -117,7 +117,7 @@ function NonInteractive() {
                 </ParallaxLayer>
                 <ParallaxLayer
                     offset={1.23} // adjust this offset value for perfect positioning
-                    speed={2} // this should be greater than the speed of flappyBack layer
+                    speed={0.6} // this should be greater than the speed of flappyBack layer
                     style={{
                         backgroundImage: `url(${skillSet})`,
                         backgroundSize: 'contain',
@@ -130,7 +130,7 @@ function NonInteractive() {
                 </ParallaxLayer>
                 <ParallaxLayer
                     offset={1.28} // adjust this offset value for perfect positioning
-                    speed={4.5} // this should be greater than the speed of flappyBack layer
+                    speed={0.7} // this should be greater than the speed of flappyBack layer
                     style={{
                         backgroundImage: `url(${CSS1})`,
                         backgroundSize: 'contain',
@@ -143,7 +143,7 @@ function NonInteractive() {
                 </ParallaxLayer>
                 <ParallaxLayer
                     offset={1.28} // adjust this offset value for perfect positioning
-                    speed={5} // this should be greater than the speed of flappyBack layer
+                    speed={0.8} // this should be greater than the speed of flappyBack layer
                     style={{
                         backgroundImage: `url(${HTML})`,
                         backgroundSize: 'contain',
@@ -156,7 +156,7 @@ function NonInteractive() {
                 </ParallaxLayer>
                 <ParallaxLayer
                     offset={1.28} // adjust this offset value for perfect positioning
-                    speed={6} // this should be greater than the speed of flappyBack layer
+                    speed={0.8} // this should be greater than the speed of flappyBack layer
                     style={{
                         backgroundImage: `url(${JavaScript})`,
                         backgroundSize: 'contain',
@@ -170,7 +170,7 @@ function NonInteractive() {
                 </ParallaxLayer>
                 <ParallaxLayer
                     offset={1.28} // adjust this offset value for perfect positioning
-                    speed={7} // this should be greater than the speed of flappyBack layer
+                    speed={0.8} // this should be greater than the speed of flappyBack layer
                     style={{
                         backgroundImage: `url(${Node})`,
                         backgroundSize: 'contain',
@@ -184,7 +184,7 @@ function NonInteractive() {
                 </ParallaxLayer>
                 <ParallaxLayer
                     offset={1.28} // adjust this offset value for perfect positioning
-                    speed={8} // this should be greater than the speed of flappyBack layer
+                    speed={0.8} // this should be greater than the speed of flappyBack layer
                     style={{
                         backgroundImage: `url(${ReactImg})`,
                         backgroundSize: 'contain',
@@ -198,7 +198,7 @@ function NonInteractive() {
                 </ParallaxLayer>
                 <ParallaxLayer
                     offset={1.28} // adjust this offset value for perfect positioning
-                    speed={9} // this should be greater than the speed of flappyBack layer
+                    speed={0.8} // this should be greater than the speed of flappyBack layer
                     style={{
                         backgroundImage: `url(${SASS})`,
                         backgroundSize: 'contain',
@@ -212,7 +212,7 @@ function NonInteractive() {
                 </ParallaxLayer>
                 <ParallaxLayer
                     offset={1.28} // adjust this offset value for perfect positioning
-                    speed={10} // this should be greater than the speed of flappyBack layer
+                    speed={0.8} // this should be greater than the speed of flappyBack layer
                     style={{
                         backgroundImage: `url(${MySQL})`,
                         backgroundSize: 'contain',
@@ -226,7 +226,7 @@ function NonInteractive() {
                 </ParallaxLayer>
                 <ParallaxLayer
                     offset={1.28} // adjust this offset value for perfect positioning
-                    speed={11} // this should be greater than the speed of flappyBack layer
+                    speed={0.8} // this should be greater than the speed of flappyBack layer
                     style={{
                         backgroundImage: `url(${Git})`,
                         backgroundSize: 'contain',
