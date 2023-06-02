@@ -36,12 +36,27 @@ function NonInteractive() {
             }
         };
 
+        // Handle the touch move event
+        const handleTouchMove = (e) => {
+            const currentScrollY = e.touches[0].clientY;
+            const targetOffset = window.innerHeight * 10;  // adjust as per requirement
+
+            if (currentScrollY > targetOffset) {
+                setShowText(false);
+            } else {
+                setShowText(true);
+            }
+        };
+
         window.addEventListener("scroll", handleScroll);
+        window.addEventListener("touchmove", handleTouchMove);
 
         return () => {
             window.removeEventListener("scroll", handleScroll);
+            window.removeEventListener("touchmove", handleTouchMove);
         };
     }, []);
+
     return (
         <>
             <Parallax pages={2}>
