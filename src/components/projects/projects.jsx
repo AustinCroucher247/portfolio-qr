@@ -7,6 +7,8 @@ import { useState } from 'react'
 import retro1 from '../../assets-portfolio-qr/Retro1.png'
 import retro2 from '../../assets-portfolio-qr/retro2.png'
 import retro3 from '../../assets-portfolio-qr/retro3.png'
+import retro4 from '../../assets-portfolio-qr/retro4.png'
+import retro5 from '../../assets-portfolio-qr/retro5.png'
 
 
 function ProjectsPage() {
@@ -50,6 +52,9 @@ function ProjectsPage() {
                             <img src={retro1} alt="Gallery" />
                             <img src={retro2} alt="Gallery" />
                             <img src={retro3} alt="Gallery" />
+                            <img src={retro4} alt="Gallery" />
+                            <img src={retro5} alt="Gallery" />
+
                             <button className='link--button' onClick={() => setShowGallery(false)}>Close</button>
                         </div>
                     </>
