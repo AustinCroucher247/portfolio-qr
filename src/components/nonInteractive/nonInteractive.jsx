@@ -1,4 +1,6 @@
 import './nonInteractive.scss';
+import React, { useState, useEffect } from 'react';
+
 import profilePic from "../../assets-portfolio-qr/ProfilePic.jpg";
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import clouds from '../../assets-portfolio-qr/cloudsMOving.png';
@@ -19,6 +21,25 @@ import Git from '../../assets-portfolio-qr/git.png'
 
 
 function NonInteractive() {
+    const [showText, setShowText] = useState(true);
+    useEffect(() => {
+        const handleScroll = () => {
+            const currentScrollY = window.scrollY;
+            const targetOffset = window.innerHeight * 10;  // adjust as per requirement
+
+            if (currentScrollY > targetOffset) {
+                setShowText(false);
+            } else {
+                setShowText(true);
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
     return (
         <>
             <Parallax pages={2}>
@@ -68,34 +89,34 @@ function NonInteractive() {
                             <div class="bird bird--four"></div>
                         </div>
                     </div>
-                    <section className='aboutMe'>
+                    {showText && (
+                        <section className='aboutMe'>
+                            <div className='text--section'>
+                                <h3 className='about'>ABOUT ME</h3>
 
-                        <div className='text--section'>
-                            <h3 className='about'>ABOUT ME</h3>
+                                <p className='about--me--text'>
+                                    My name is Austin Croucher and I am a graduate of both the Philosophy and History programs
+                                    at York University with a certificate in conflict resolution and dispute management. After
+                                    graduating, I started moving up in the restaurant industry until I reached the position of General Manager.
+                                    After a few years in this position, I realized I wanted to challenge myself more intellectually, and given
+                                    my pre-existing interest in the tech industry, it seemed a shift into software engineering would be a good fit.
+                                </p>
 
-                            <p className='about--me--text'>
-                                My name is Austin Croucher and I am a graduate of both the Philosophy and History programs
-                                at York University with a certificate in conflict resolution and dispute management. After
-                                graduating, I started moving up in the restaurant industry until I reached the position of General Manager.
-                                After a few years in this position, I realized I wanted to challenge myself more intellectually, and given
-                                my pre-existing interest in the tech industry, it seemed a shift into software engineering would be a good fit.
-                            </p>
+                                <p className='about--me--text'>
+                                    I made the decision to leave and pursued an education in software engineering through BrainStation.
+                                    I believe that my educational background, as well as my professional background, will work together for a
+                                    seamless transition into the tech industry. My interpersonal skills learned throughout my time in the
+                                    restaurant industry will make working as part of a team effortless, and on top of this, my logical and
+                                    analytical thought processes formed throughout my philosophy degree will transition well into programming,
+                                    given the innate logical nature of coding.
+                                </p>
+                            </div>
 
-                            <p className='about--me--text'>
-                                I made the decision to leave and pursued an education in software engineering through BrainStation.
-                                I believe that my educational background, as well as my professional background, will work together for a
-                                seamless transition into the tech industry. My interpersonal skills learned throughout my time in the
-                                restaurant industry will make working as part of a team effortless, and on top of this, my logical and
-                                analytical thought processes formed throughout my philosophy degree will transition well into programming,
-                                given the innate logical nature of coding.
-                            </p>
-                        </div>
-
-                    </section>
-
+                        </section>
+                    )}
                 </ParallaxLayer>
                 <ParallaxLayer
-                    offset={1.53} // adjust this offset value for perfect positioning
+                    offset={1.23} // adjust this offset value for perfect positioning
                     speed={2} // this should be greater than the speed of flappyBack layer
                     style={{
                         backgroundImage: `url(${skillSet})`,
@@ -108,7 +129,7 @@ function NonInteractive() {
 
                 </ParallaxLayer>
                 <ParallaxLayer
-                    offset={1.58} // adjust this offset value for perfect positioning
+                    offset={1.28} // adjust this offset value for perfect positioning
                     speed={4.5} // this should be greater than the speed of flappyBack layer
                     style={{
                         backgroundImage: `url(${CSS1})`,
@@ -121,7 +142,7 @@ function NonInteractive() {
                     }}>
                 </ParallaxLayer>
                 <ParallaxLayer
-                    offset={1.58} // adjust this offset value for perfect positioning
+                    offset={1.28} // adjust this offset value for perfect positioning
                     speed={5} // this should be greater than the speed of flappyBack layer
                     style={{
                         backgroundImage: `url(${HTML})`,
@@ -134,7 +155,7 @@ function NonInteractive() {
                     }}>
                 </ParallaxLayer>
                 <ParallaxLayer
-                    offset={1.58} // adjust this offset value for perfect positioning
+                    offset={1.28} // adjust this offset value for perfect positioning
                     speed={6} // this should be greater than the speed of flappyBack layer
                     style={{
                         backgroundImage: `url(${JavaScript})`,
@@ -148,7 +169,7 @@ function NonInteractive() {
                     }}>
                 </ParallaxLayer>
                 <ParallaxLayer
-                    offset={1.58} // adjust this offset value for perfect positioning
+                    offset={1.28} // adjust this offset value for perfect positioning
                     speed={7} // this should be greater than the speed of flappyBack layer
                     style={{
                         backgroundImage: `url(${Node})`,
@@ -162,7 +183,7 @@ function NonInteractive() {
                     }}>
                 </ParallaxLayer>
                 <ParallaxLayer
-                    offset={1.58} // adjust this offset value for perfect positioning
+                    offset={1.28} // adjust this offset value for perfect positioning
                     speed={8} // this should be greater than the speed of flappyBack layer
                     style={{
                         backgroundImage: `url(${ReactImg})`,
@@ -176,7 +197,7 @@ function NonInteractive() {
                     }}>
                 </ParallaxLayer>
                 <ParallaxLayer
-                    offset={1.58} // adjust this offset value for perfect positioning
+                    offset={1.28} // adjust this offset value for perfect positioning
                     speed={9} // this should be greater than the speed of flappyBack layer
                     style={{
                         backgroundImage: `url(${SASS})`,
@@ -190,7 +211,7 @@ function NonInteractive() {
                     }}>
                 </ParallaxLayer>
                 <ParallaxLayer
-                    offset={1.58} // adjust this offset value for perfect positioning
+                    offset={1.28} // adjust this offset value for perfect positioning
                     speed={10} // this should be greater than the speed of flappyBack layer
                     style={{
                         backgroundImage: `url(${MySQL})`,
@@ -204,7 +225,7 @@ function NonInteractive() {
                     }}>
                 </ParallaxLayer>
                 <ParallaxLayer
-                    offset={1.58} // adjust this offset value for perfect positioning
+                    offset={1.28} // adjust this offset value for perfect positioning
                     speed={11} // this should be greater than the speed of flappyBack layer
                     style={{
                         backgroundImage: `url(${Git})`,

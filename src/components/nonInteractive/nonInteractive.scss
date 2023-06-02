@@ -188,11 +188,23 @@
     margin-top: 1.4rem;
 }
 
+@keyframes scrollUp {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-90vh);
+    }
+}
+
 .text--section {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    animation: scrollUp 10s 3s 1 forwards;
+
 }
 
 .about {
@@ -202,9 +214,9 @@
     color: rgb(252, 205, 87)
 }
 
-// body {
-//     background-color: #6db6e3;
-// }
+body {
+    background-color: #6db6e3;
+}
 
 .text--section {
     display: flex;
