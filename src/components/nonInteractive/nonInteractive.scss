@@ -293,13 +293,14 @@ body {
     visibility: hidden;
     animation: appear 1s 15s forwards;
     /* Animation to make it visible after 10s */
-
+    margin-top: .5rem;
     /* Start hidden */
 
 }
 
 .icons {
-    width: 40px;
+    width: 70px;
+    margin-bottom: .3rem;
     margin-right: .3rem;
     visibility: hidden;
     animation: appear 1s 16s forwards;
@@ -310,7 +311,10 @@ body {
 }
 
 .icon--container {
-    // animation: scrollUp3 3s 15s 1 forwards;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -321,7 +325,7 @@ body {
     justify-content: center;
     visibility: hidden;
     animation: appear 1s 15s forwards;
-    margin-top: 15rem;
+    margin-top: 5rem;
     /* Animation to make it visible after 10s */
 
     /* Start hidden */
@@ -399,7 +403,7 @@ body {
     }
 
     100% {
-        transform: translateY(47rem);
+        transform: translateY(46rem);
         visibility: visible;
     }
 }
@@ -415,7 +419,7 @@ body {
     }
 
     100% {
-        transform: translateY(33rem);
+        transform: translateY(42rem);
         visibility: visible;
     }
 }

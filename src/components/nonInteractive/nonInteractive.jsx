@@ -7,6 +7,7 @@ import clouds from '../../assets-portfolio-qr/cloudsMOving.png';
 import flappyBack from '../../assets-portfolio-qr/flappy5.png';
 import skillSet from '../../assets-portfolio-qr/bannerskill.png'
 // // import dino from '../../assets-portfolio-qr/Dino.png';
+import express from '../../assets-portfolio-qr/express-js.png'
 import HTML from '../../assets-portfolio-qr/html-5.png'
 import CSS1 from '../../assets-portfolio-qr/css-3.png'
 import JavaScript from '../../assets-portfolio-qr/js.png'
@@ -141,11 +142,15 @@ function NonInteractive() {
                         <img className={`icons ${shouldScroll ? "visibleIcon" : ""}`} src={HTML} alt="" />
                         <img className={`icons ${shouldScroll ? "visibleIcon" : ""}`} src={CSS1} alt="" />
                         <img className={`icons ${shouldScroll ? "visibleIcon" : ""}`} src={JavaScript} alt="" />
+                        <br />
                         <img className={`icons ${shouldScroll ? "visibleIcon" : ""}`} src={Node} alt="" />
                         <img className={`icons ${shouldScroll ? "visibleIcon" : ""}`} src={ReactImg} alt="" />
                         <img className={`icons ${shouldScroll ? "visibleIcon" : ""}`} src={MySQL} alt="" />
+                        <br />
                         <img className={`icons ${shouldScroll ? "visibleIcon" : ""}`} src={Git} alt="" />
                         <img className={`icons ${shouldScroll ? "visibleIcon" : ""}`} src={SASS} alt="" />
+                        <img className={`icons ${shouldScroll ? "visibleIcon" : ""}`} src={express} alt="" />
+
                     </div>
                     <div>
                         <img className={`projects--banner ${shouldScroll ? "visibleSkillBanner scrollDownBanner" : ""}`} src={projects} alt="" />
