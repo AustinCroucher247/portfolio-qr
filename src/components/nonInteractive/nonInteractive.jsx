@@ -2,24 +2,25 @@ import './nonInteractive.scss';
 import profilePic from "../../assets-portfolio-qr/ProfilePic.jpg";
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import clouds from '../../assets-portfolio-qr/cloudsMOving.png';
-import flappyBack from '../../assets-portfolio-qr/flappy4.png';
-import dino from '../../assets-portfolio-qr/Dino.png';
-import HTML from '../../assets-portfolio-qr/html-5.png'
-import CSS from '../../assets-portfolio-qr/css-3.png'
-import JavaScript from '../../assets-portfolio-qr/js.png'
-import Node from '../../assets-portfolio-qr/nodejs.png'
-import ReactImg from '../../assets-portfolio-qr/react.png'
-import SASS from '../../assets-portfolio-qr/sass.png'
-import MySQL from '../../assets-portfolio-qr/mysql.png'
-import Git from '../../assets-portfolio-qr/git.png'
-import dino2 from '../../assets-portfolio-qr/dino2.png'
-import dino3 from '../../assets-portfolio-qr/dino3.png'
+import flappyBack from '../../assets-portfolio-qr/flappy5.png';
+// import dino from '../../assets-portfolio-qr/Dino.png';
+// import HTML from '../../assets-portfolio-qr/html-5.png'
+// import CSS from '../../assets-portfolio-qr/css-3.png'
+// import JavaScript from '../../assets-portfolio-qr/js.png'
+// import Node from '../../assets-portfolio-qr/nodejs.png'
+// import ReactImg from '../../assets-portfolio-qr/react.png'
+// import SASS from '../../assets-portfolio-qr/sass.png'
+// import MySQL from '../../assets-portfolio-qr/mysql.png'
+// import Git from '../../assets-portfolio-qr/git.png'
+// import dino2 from '../../assets-portfolio-qr/dino2.png'
+// import dino3 from '../../assets-portfolio-qr/dino3.png'
+// import noDino from '../../assets-portfolio-qr/noDino.png'
 
 
 function NonInteractive() {
     return (
         <>
-            <Parallax pages={5}>
+            <Parallax pages={2}>
                 <ParallaxLayer
                     speed={-0.2}
                     style={{
@@ -42,12 +43,13 @@ function NonInteractive() {
 
                 </ParallaxLayer>
 
-                <ParallaxLayer offset={0.99} speed={0.5}
+                <ParallaxLayer offset={1} speed={1}
                     style={{
                         backgroundImage: `url(${flappyBack})`,
                         backgroundSize: 'cover'
                     }}
-                >                            <div class="container">
+                >
+                    <div class="container">
                         <div class="bird-container bird-container--one">
                             <div class="bird bird--one"></div>
                         </div>
@@ -92,9 +94,37 @@ function NonInteractive() {
                     </section>
 
                 </ParallaxLayer>
-                <ParallaxLayer offset={1.38} speed={0.9}
+            </Parallax>
+        </>
+    );
+}
+
+export default NonInteractive;
+
+
+
+
+
+
+// eslint-disable-next-line
+{/* <ParallaxLayer offset={1.78} speed={0.9}
+style={{
+    backgroundImage: `url(${dino2})`,
+    backgroundSize: 'contain'
+}}
+>
+</ParallaxLayer>
+<ParallaxLayer offset={1.97} speed={0.9}
+style={{
+    backgroundImage: `url(${dino3})`,
+    backgroundSize: 'contain'
+}}
+>
+</ParallaxLayer> */}
+// eslint-disable-next-line
+{/* <ParallaxLayer offset={1.38} speed={0.9}
                     style={{
-                        backgroundImage: `url(${dino})`,
+                        backgroundImage: `url(${noDino})`,
                         backgroundSize: 'contain'
                     }}
                 >
@@ -109,24 +139,4 @@ function NonInteractive() {
                         <img src={Git} className='skill--image' alt='Git' />
                         <img src={MySQL} className='skill--image' alt='MySQL' />
                     </div>
-                </ParallaxLayer>
-                <ParallaxLayer offset={1.78} speed={0.9}
-                    style={{
-                        backgroundImage: `url(${dino2})`,
-                        backgroundSize: 'contain'
-                    }}
-                >
-                </ParallaxLayer>
-                <ParallaxLayer offset={1.97} speed={0.9}
-                    style={{
-                        backgroundImage: `url(${dino3})`,
-                        backgroundSize: 'contain'
-                    }}
-                >
-                </ParallaxLayer>
-            </Parallax>
-        </>
-    );
-}
-
-export default NonInteractive;
+                </ParallaxLayer> */}
