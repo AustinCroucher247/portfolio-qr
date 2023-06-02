@@ -129,7 +129,7 @@ function NonInteractive() {
                                     analytical thought processes formed throughout my philosophy degree will transition well into programming,
                                     given the innate logical nature of coding.
                                 </p>
-                                <button onClick={() => setShouldScroll(true)}>next</button>
+                                <button className='next--button' onClick={() => setShouldScroll(true)}>NEXT</button>
 
                             </div>
                         </section>
