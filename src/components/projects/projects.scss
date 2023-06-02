@@ -13,7 +13,6 @@
     border-radius: 10px;
     border: 2px solid goldenrod;
     height: 175px;
-    margin-top: 5rem;
 }
 
 .project--card {
@@ -33,4 +32,44 @@
 .project--decription {
 
     color: rgb(244, 189, 50)
+}
+
+.project--title {
+    color: rgb(244, 189, 50);
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+.link--button {
+    margin-top: .3rem;
+    width: 100%;
+    background-color: rgb(244, 189, 50);
+    height: 30px;
+    font-size: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.video-player {
+    position: fixed;
+    z-index: 2;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.video-overlay {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.next--projects--page {
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-left: .8rem;
 }
