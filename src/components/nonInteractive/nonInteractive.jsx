@@ -7,14 +7,14 @@ import clouds from '../../assets-portfolio-qr/cloudsMOving.png';
 import flappyBack from '../../assets-portfolio-qr/flappy5.png';
 import skillSet from '../../assets-portfolio-qr/bannerskill.png'
 // // import dino from '../../assets-portfolio-qr/Dino.png';
-// import HTML from '../../assets-portfolio-qr/html-5.png'
-// import CSS1 from '../../assets-portfolio-qr/css-3.png'
-// import JavaScript from '../../assets-portfolio-qr/js.png'
-// import Node from '../../assets-portfolio-qr/nodejs.png'
-// import ReactImg from '../../assets-portfolio-qr/react.png'
-// import SASS from '../../assets-portfolio-qr/sass.png'
-// import MySQL from '../../assets-portfolio-qr/mysql.png'
-// import Git from '../../assets-portfolio-qr/git.png'
+import HTML from '../../assets-portfolio-qr/html-5.png'
+import CSS1 from '../../assets-portfolio-qr/css-3.png'
+import JavaScript from '../../assets-portfolio-qr/js.png'
+import Node from '../../assets-portfolio-qr/nodejs.png'
+import ReactImg from '../../assets-portfolio-qr/react.png'
+import SASS from '../../assets-portfolio-qr/sass.png'
+import MySQL from '../../assets-portfolio-qr/mysql.png'
+import Git from '../../assets-portfolio-qr/git.png'
 // import dino2 from '../../assets-portfolio-qr/dino2.png'
 // import dino3 from '../../assets-portfolio-qr/dino3.png'
 // import noDino from '../../assets-portfolio-qr/noDino.png'
@@ -117,6 +117,16 @@ function NonInteractive() {
                 </ParallaxLayer>
                 <section className='skillset--section'>
                     <img className='skill--banner' src={skillSet} alt="" />
+                    <div className='icon--container'>
+                        <img className='icons' src={HTML} alt="" />
+                        <img className='icons' src={CSS1} alt="" />
+                        <img className='icons' src={JavaScript} alt="" />
+                        <img className='icons' src={Node} alt="" />
+                        <img className='icons' src={ReactImg} alt="" />
+                        <img className='icons' src={MySQL} alt="" />
+                        <img className='icons' src={Git} alt="" />
+                        <img className='icons' src={SASS} alt="" />
+                    </div>
                 </section>
             </Parallax>
         </>
