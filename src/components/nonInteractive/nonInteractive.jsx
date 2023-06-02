@@ -6,15 +6,15 @@ import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import clouds from '../../assets-portfolio-qr/cloudsMOving.png';
 import flappyBack from '../../assets-portfolio-qr/flappy5.png';
 import skillSet from '../../assets-portfolio-qr/bannerskill.png'
-// import dino from '../../assets-portfolio-qr/Dino.png';
-import HTML from '../../assets-portfolio-qr/html-5.png'
-import CSS1 from '../../assets-portfolio-qr/css-3.png'
-import JavaScript from '../../assets-portfolio-qr/js.png'
-import Node from '../../assets-portfolio-qr/nodejs.png'
-import ReactImg from '../../assets-portfolio-qr/react.png'
-import SASS from '../../assets-portfolio-qr/sass.png'
-import MySQL from '../../assets-portfolio-qr/mysql.png'
-import Git from '../../assets-portfolio-qr/git.png'
+// // import dino from '../../assets-portfolio-qr/Dino.png';
+// import HTML from '../../assets-portfolio-qr/html-5.png'
+// import CSS1 from '../../assets-portfolio-qr/css-3.png'
+// import JavaScript from '../../assets-portfolio-qr/js.png'
+// import Node from '../../assets-portfolio-qr/nodejs.png'
+// import ReactImg from '../../assets-portfolio-qr/react.png'
+// import SASS from '../../assets-portfolio-qr/sass.png'
+// import MySQL from '../../assets-portfolio-qr/mysql.png'
+// import Git from '../../assets-portfolio-qr/git.png'
 // import dino2 from '../../assets-portfolio-qr/dino2.png'
 // import dino3 from '../../assets-portfolio-qr/dino3.png'
 // import noDino from '../../assets-portfolio-qr/noDino.png'
@@ -22,6 +22,7 @@ import Git from '../../assets-portfolio-qr/git.png'
 
 function NonInteractive() {
     const [showText, setShowText] = useState(true);
+
     useEffect(() => {
         const handleScroll = () => {
             const currentScrollY = window.scrollY;
@@ -111,134 +112,12 @@ function NonInteractive() {
                                     given the innate logical nature of coding.
                                 </p>
                             </div>
-
                         </section>
                     )}
                 </ParallaxLayer>
-                <ParallaxLayer
-                    offset={1.23} // adjust this offset value for perfect positioning
-                    speed={0.6} // this should be greater than the speed of flappyBack layer
-                    style={{
-                        backgroundImage: `url(${skillSet})`,
-                        backgroundSize: 'contain',
-                        width: '80%',
-                        left: '2.5rem',
-                        height: '80px',
-                        zIndex: 1 // ensure this layer stays on top
-                    }}>
-
-                </ParallaxLayer>
-                <ParallaxLayer
-                    offset={1.28} // adjust this offset value for perfect positioning
-                    speed={0.7} // this should be greater than the speed of flappyBack layer
-                    style={{
-                        backgroundImage: `url(${CSS1})`,
-                        backgroundSize: 'contain',
-                        margin: '2rem',
-                        left: '-1rem',
-                        width: '50%',
-                        height: '50px',
-                        zIndex: 1 // ensure this layer stays on top
-                    }}>
-                </ParallaxLayer>
-                <ParallaxLayer
-                    offset={1.28} // adjust this offset value for perfect positioning
-                    speed={0.8} // this should be greater than the speed of flappyBack layer
-                    style={{
-                        backgroundImage: `url(${HTML})`,
-                        backgroundSize: 'contain',
-                        margin: '2rem',
-                        left: '1.5rem',
-                        width: '50%',
-                        height: '50px',
-                        zIndex: 1 // ensure this layer stays on top
-                    }}>
-                </ParallaxLayer>
-                <ParallaxLayer
-                    offset={1.28} // adjust this offset value for perfect positioning
-                    speed={0.8} // this should be greater than the speed of flappyBack layer
-                    style={{
-                        backgroundImage: `url(${JavaScript})`,
-                        backgroundSize: 'contain',
-                        margin: '2rem',
-                        top: '.4rem',
-                        left: '4.8rem',
-                        width: '50%',
-                        height: '40px',
-                        zIndex: 1 // ensure this layer stays on top
-                    }}>
-                </ParallaxLayer>
-                <ParallaxLayer
-                    offset={1.28} // adjust this offset value for perfect positioning
-                    speed={0.8} // this should be greater than the speed of flappyBack layer
-                    style={{
-                        backgroundImage: `url(${Node})`,
-                        backgroundSize: 'contain',
-                        margin: '2rem',
-                        top: '.4rem',
-                        left: '7.9rem',
-                        width: '50%',
-                        height: '40px',
-                        zIndex: 1 // ensure this layer stays on top
-                    }}>
-                </ParallaxLayer>
-                <ParallaxLayer
-                    offset={1.28} // adjust this offset value for perfect positioning
-                    speed={0.8} // this should be greater than the speed of flappyBack layer
-                    style={{
-                        backgroundImage: `url(${ReactImg})`,
-                        backgroundSize: 'contain',
-                        margin: '2rem',
-                        top: '.7rem',
-                        left: '11rem',
-                        width: '50%',
-                        height: '40px',
-                        zIndex: 1 // ensure this layer stays on top
-                    }}>
-                </ParallaxLayer>
-                <ParallaxLayer
-                    offset={1.28} // adjust this offset value for perfect positioning
-                    speed={0.8} // this should be greater than the speed of flappyBack layer
-                    style={{
-                        backgroundImage: `url(${SASS})`,
-                        backgroundSize: 'contain',
-                        margin: '2rem',
-                        top: '.7rem',
-                        left: '14rem',
-                        width: '50%',
-                        height: '40px',
-                        zIndex: 1 // ensure this layer stays on top
-                    }}>
-                </ParallaxLayer>
-                <ParallaxLayer
-                    offset={1.28} // adjust this offset value for perfect positioning
-                    speed={0.8} // this should be greater than the speed of flappyBack layer
-                    style={{
-                        backgroundImage: `url(${MySQL})`,
-                        backgroundSize: 'contain',
-                        margin: '2rem',
-                        top: '.7rem',
-                        left: '17rem',
-                        width: '50%',
-                        height: '40px',
-                        zIndex: 1 // ensure this layer stays on top
-                    }}>
-                </ParallaxLayer>
-                <ParallaxLayer
-                    offset={1.28} // adjust this offset value for perfect positioning
-                    speed={0.8} // this should be greater than the speed of flappyBack layer
-                    style={{
-                        backgroundImage: `url(${Git})`,
-                        backgroundSize: 'contain',
-                        margin: '2rem',
-                        top: '.7rem',
-                        left: '20rem',
-                        width: '50%',
-                        height: '40px',
-                        zIndex: 1 // ensure this layer stays on top
-                    }}>
-                </ParallaxLayer>
-
+                <section className='skillset--section'>
+                    <img className='skill--banner' src={skillSet} alt="" />
+                </section>
             </Parallax>
         </>
     );
@@ -250,38 +129,127 @@ export default NonInteractive;
 
 
 
+// eslint-disable-next-line
+{/* <ParallaxLayer
+offset={1.23} // adjust this offset value for perfect positioning
+speed={0.6} // this should be greater than the speed of flappyBack layer
+style={{
+    backgroundImage: `url(${skillSet})`,
+    backgroundSize: 'contain',
+    width: '80%',
+    left: '2.5rem',
+    height: '80px',
+    zIndex: 1 // ensure this layer stays on top
+}}>
 
-// eslint-disable-next-line
-{/* <ParallaxLayer offset={1.78} speed={0.9}
-style={{
-    backgroundImage: `url(${dino2})`,
-    backgroundSize: 'contain'
-}}
->
 </ParallaxLayer>
-<ParallaxLayer offset={1.97} speed={0.9}
+<ParallaxLayer
+offset={1.28} // adjust this offset value for perfect positioning
+speed={0.7} // this should be greater than the speed of flappyBack layer
 style={{
-    backgroundImage: `url(${dino3})`,
-    backgroundSize: 'contain'
-}}
->
+    backgroundImage: `url(${CSS1})`,
+    backgroundSize: 'contain',
+    margin: '2rem',
+    left: '-1rem',
+    width: '50%',
+    height: '50px',
+    zIndex: 1 // ensure this layer stays on top
+}}>
+</ParallaxLayer>
+<ParallaxLayer
+offset={1.28} // adjust this offset value for perfect positioning
+speed={0.8} // this should be greater than the speed of flappyBack layer
+style={{
+    backgroundImage: `url(${HTML})`,
+    backgroundSize: 'contain',
+    margin: '2rem',
+    left: '1.5rem',
+    width: '50%',
+    height: '50px',
+    zIndex: 1 // ensure this layer stays on top
+}}>
+</ParallaxLayer>
+<ParallaxLayer
+offset={1.28} // adjust this offset value for perfect positioning
+speed={0.8} // this should be greater than the speed of flappyBack layer
+style={{
+    backgroundImage: `url(${JavaScript})`,
+    backgroundSize: 'contain',
+    margin: '2rem',
+    top: '.4rem',
+    left: '4.8rem',
+    width: '50%',
+    height: '40px',
+    zIndex: 1 // ensure this layer stays on top
+}}>
+</ParallaxLayer>
+<ParallaxLayer
+offset={1.28} // adjust this offset value for perfect positioning
+speed={0.8} // this should be greater than the speed of flappyBack layer
+style={{
+    backgroundImage: `url(${Node})`,
+    backgroundSize: 'contain',
+    margin: '2rem',
+    top: '.4rem',
+    left: '7.9rem',
+    width: '50%',
+    height: '40px',
+    zIndex: 1 // ensure this layer stays on top
+}}>
+</ParallaxLayer>
+<ParallaxLayer
+offset={1.28} // adjust this offset value for perfect positioning
+speed={0.8} // this should be greater than the speed of flappyBack layer
+style={{
+    backgroundImage: `url(${ReactImg})`,
+    backgroundSize: 'contain',
+    margin: '2rem',
+    top: '.7rem',
+    left: '11rem',
+    width: '50%',
+    height: '40px',
+    zIndex: 1 // ensure this layer stays on top
+}}>
+</ParallaxLayer>
+<ParallaxLayer
+offset={1.28} // adjust this offset value for perfect positioning
+speed={0.8} // this should be greater than the speed of flappyBack layer
+style={{
+    backgroundImage: `url(${SASS})`,
+    backgroundSize: 'contain',
+    margin: '2rem',
+    top: '.7rem',
+    left: '14rem',
+    width: '50%',
+    height: '40px',
+    zIndex: 1 // ensure this layer stays on top
+}}>
+</ParallaxLayer>
+<ParallaxLayer
+offset={1.28} // adjust this offset value for perfect positioning
+speed={0.8} // this should be greater than the speed of flappyBack layer
+style={{
+    backgroundImage: `url(${MySQL})`,
+    backgroundSize: 'contain',
+    margin: '2rem',
+    top: '.7rem',
+    left: '17rem',
+    width: '50%',
+    height: '40px',
+    zIndex: 1 // ensure this layer stays on top
+}}>
+</ParallaxLayer>
+<ParallaxLayer
+offset={1.28} // adjust this offset value for perfect positioning
+speed={0.8} // this should be greater than the speed of flappyBack layer
+style={{
+    backgroundImage: `url(${Git})`,
+    backgroundSize: 'contain',
+    margin: '2rem',
+    top: '.7rem',
+    left: '20rem',
+    width: '50%',
+    height: '40px',
+    zIndex: 1 // ensure this layer stays on top
+}}>
 </ParallaxLayer> */}
-// eslint-disable-next-line
-{/* <ParallaxLayer offset={1.38} speed={0.9}
-                    style={{
-                        backgroundImage: `url(${noDino})`,
-                        backgroundSize: 'contain'
-                    }}
-                >
-                    <h3 className='skillset'>SKILLSET</h3>
-                    <div className='skill--icon--container'>
-                        <img src={HTML} className='skill--image' alt='HTML' />
-                        <img src={CSS} className='skill--image' alt='CSS' />
-                        <img src={JavaScript} className='skill--image' alt='Javascript' />
-                        <img src={ReactImg} className='skill--image' alt='React' />
-                        <img src={Node} className='skill--image' alt='Node' />
-                        <img src={SASS} className='skill--image' alt='SASS' />
-                        <img src={Git} className='skill--image' alt='Git' />
-                        <img src={MySQL} className='skill--image' alt='MySQL' />
-                    </div>
-                </ParallaxLayer> */}

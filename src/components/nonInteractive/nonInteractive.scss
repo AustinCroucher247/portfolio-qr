@@ -203,7 +203,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    animation: scrollUp 10s 3s 1 forwards;
+    animation: scrollUp 10s 7s 1 forwards;
 
 }
 
@@ -241,4 +241,39 @@ body {
     z-index: 1;
     /* Ensure the birds are behind the text */
     /* ... rest of your styles ... */
+}
+
+.skillset--section {
+    z-index: 10;
+    animation: scrollUp2 10s 7s 1 forwards;
+
+}
+
+@keyframes scrollUp2 {
+    0% {
+        transform: translateY(-10vh);
+    }
+
+    100% {
+        transform: translateY(110vh);
+    }
+}
+
+@keyframes appear {
+    to {
+        visibility: visible;
+    }
+}
+
+.skill--banner {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    visibility: hidden;
+    animation: appear 1s 10s forwards;
+    /* Animation to make it visible after 10s */
+
+    /* Start hidden */
+
 }
