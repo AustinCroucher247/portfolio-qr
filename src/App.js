@@ -5,12 +5,15 @@ import ProjectsPage from "./components/projects/projects";
 import PlanetProject from "./components/PlanetProject/planetProject";
 import WoodshopProject from "./components/woodshopProject/woodshopProject";
 import Contact from "./components/contact/contact";
+import Header from "./components/header/header";
 
 function App() {
   return (
     <>
       <BrowserRouter>
+        <Header></Header>
         <Routes>
+          <Route path="/header" element={<Header />} />
           <Route path="/" element={<LandingPage />} />
           <Route path="/nonInteractive" element={<NonInteractive />} />
           <Route path="/nonInteractive/projects" element={<ProjectsPage />} />

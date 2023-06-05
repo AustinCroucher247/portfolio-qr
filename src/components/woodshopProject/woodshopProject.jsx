@@ -21,7 +21,7 @@ function WoodshopProject() {
                     <img className='banner--projects--page' src={projects} alt="" />
                 </div>
                 <div className='project--card'>
-                    <h3 className='project--title'>Croucher Woodshop</h3>
+                    <h3 className='project--title--wood'>Croucher Woodshop</h3>
                     <img className='project--thumbnail' src={woodshopThumb} alt="" />
                     <p className='project--decription'>
                         A portfolio website built in React utilizing Strapi CMS for backend content management.
