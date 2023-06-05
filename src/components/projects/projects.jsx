@@ -9,6 +9,7 @@ import retro2 from '../../assets-portfolio-qr/retro2.png'
 import retro3 from '../../assets-portfolio-qr/retro3.png'
 import retro4 from '../../assets-portfolio-qr/retro4.png'
 import retro5 from '../../assets-portfolio-qr/retro5.png'
+import { Link } from 'react-router-dom'
 
 
 function ProjectsPage() {
@@ -59,7 +60,9 @@ function ProjectsPage() {
                         </div>
                     </>
                 )}
-                <img className='next--projects--page' src={next} alt="" />
+                <Link to={'./planetjumper'}>
+                    <img className='next--projects--page' src={next} alt="" />
+                </Link>
             </div>
             <div>
             </div>
