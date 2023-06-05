@@ -16,6 +16,7 @@ import ReactImg from '../../assets-portfolio-qr/react.png'
 import SASS from '../../assets-portfolio-qr/sass.png'
 import MySQL from '../../assets-portfolio-qr/mysql.png'
 import Git from '../../assets-portfolio-qr/git.png'
+import PHP from '../../assets-portfolio-qr/PHP.png'
 import projects from '../../assets-portfolio-qr/projects.png'
 import contact from "../../assets-portfolio-qr/contactBanner.png"
 // import dino2 from '../../assets-portfolio-qr/dino2.png'
@@ -150,6 +151,7 @@ function NonInteractive() {
                         <img className={`icons ${shouldScroll ? "visibleIcon" : ""}`} src={Git} alt="" />
                         <img className={`icons ${shouldScroll ? "visibleIcon" : ""}`} src={SASS} alt="" />
                         <img className={`icons ${shouldScroll ? "visibleIcon" : ""}`} src={express} alt="" />
+                        <img className={`icons ${shouldScroll ? "visibleIcon" : ""}`} src={PHP} alt="" />
 
                     </div>
                     <div>
@@ -157,9 +159,11 @@ function NonInteractive() {
                             <img className={`projects--banner ${shouldScroll ? "visibleSkillBanner scrollDownBanner" : ""}`} src={projects} alt="" />
                         </Link>
                     </div>
-                    <div>
-                        <img className={`projects--banner ${shouldScroll ? "visibleSkillBanner scrollDownContact" : ""}`} src={contact} alt="" />
-                    </div>
+                    <Link to={'/contact'}>
+                        <div>
+                            <img className={`projects--banner ${shouldScroll ? "visibleSkillBanner scrollDownContact" : ""}`} src={contact} alt="" />
+                        </div>
+                    </Link>
                 </section>
             </Parallax>
         </>

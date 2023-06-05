@@ -55,7 +55,7 @@ function WoodshopProject() {
                         </div>
                     </>
                 )}
-                <img className='next--projects--page' src={moreProjects} alt="" />
+                <img className='next--projects--page--wood' src={moreProjects} alt="" />
             </div>
             <div>
             </div>
