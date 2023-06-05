@@ -19,7 +19,7 @@ function Contact() {
                         <a className='icon--banners' href="https://github.com/AustinCroucher247"> <img className='contact--banner' src={GitHubBanner} alt="git" /></a>
                         <a className='icon--banners' href="mailto:austin.croucher@gmail.com" > <img className='contact--banner--centered' src={gmailBanner} alt="gmail" /></a>
                     </div>
-                    <form className='form' action="https://formsubmit.co/austin.croucher@gmail.com" method="POST" id="contact-form">
+                    <form className='form' action="https://formsubmit.co/092d6d2b49e64d5ea83288c159a27055" method="POST" id="contact-form">
                         <label htmlFor="name">Name:</label>
                         <input type="text" id="name" name="name" required />
 
