@@ -26,8 +26,8 @@ import about from '../../assets-portfolio-qr/AboutMeBanner.png'
 
 
 function NonInteractive() {
-    // const [showText, setShowText] = useState(true);
-    // const [shouldScroll, setShouldScroll] = useState(false);
+    const [_showText, setShowText] = useState(true);
+    const [shouldScroll, _setShouldScroll] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
