@@ -29,6 +29,11 @@ function Header() {
                         </Link>
                     </li>
                     <li className='nav--text'>
+                        <Link to={'/aboutme'} style={{ textDecoration: 'none', color: 'inherit' }} onClick={() => setIsOpen(false)}>
+                            About Me
+                        </Link>
+                    </li>
+                    <li className='nav--text'>
                         <Link to={'/interactive'} style={{ textDecoration: 'none', color: 'inherit' }} onClick={() => setIsOpen(false)}>
                             Interactive
                         </Link>

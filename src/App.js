@@ -6,6 +6,7 @@ import PlanetProject from "./components/PlanetProject/planetProject";
 import WoodshopProject from "./components/woodshopProject/woodshopProject";
 import Contact from "./components/contact/contact";
 import Header from "./components/header/header";
+import AboutMe from "./components/aboutMe/aboutMe";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/nonInteractive/projects/planetjumper" element={<PlanetProject />} />
           <Route path="/nonInteractive/projects/woodshopproject" element={<WoodshopProject />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/aboutme" element={<AboutMe />} />
 
         </Routes>
       </BrowserRouter>
