@@ -26,7 +26,9 @@ import about from '../../assets-portfolio-qr/AboutMeBanner.png'
 
 
 function NonInteractive() {
+    // eslint-disable-next-line
     const [_showText, setShowText] = useState(true);
+    // eslint-disable-next-line
     const [shouldScroll, _setShouldScroll] = useState(false);
 
     useEffect(() => {
