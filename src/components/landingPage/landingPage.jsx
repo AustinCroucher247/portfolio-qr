@@ -8,10 +8,12 @@ function LandingPage() {
         <>
             <div className='landing--top'>
                 <img className='banner--first' src={austinPort} alt="" />
-                <img className='banner banner--third' src={banner1} alt="banner" />
                 <Link to='./nonInteractive'>
-                    <img className='banner banner--second' src={banner} alt="banner" />
+
+                    <img className='banner banner--third' src={banner1} alt="banner" />
                 </Link>
+
+                <img className='banner banner--second' src={banner} alt="banner" />
                 <div class="container">
                     <div class="bird-container bird-container--one">
                         <div class="bird bird--one"></div>
