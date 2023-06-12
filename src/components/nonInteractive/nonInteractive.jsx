@@ -84,7 +84,7 @@ function NonInteractive() {
                                 <img className='profilePic' src={profilePic} alt="" />
                             </div>
 
-                            <h1 className='landing-page-text--scroll'>Scroll up to see more!</h1>
+                            <h1 className='landing-page-text--scroll'>Scroll down to see more!</h1>
                         </div>
                     </div>
 
