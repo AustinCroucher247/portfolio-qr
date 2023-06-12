@@ -11,7 +11,7 @@
     background-size: cover;
     overflow: hidden;
     background-position: center;
-    animation: moveBackground 60s linear infinite;
+    animation: moveBackground 100s linear infinite;
 }
 
 @keyframes moveBackground {
@@ -251,37 +251,37 @@ body {
 
 }
 
-@keyframes scrollUp2 {
-    0% {
-        transform: translateY(-10vh);
-    }
+// @keyframes scrollUp2 {
+//     0% {
+//         transform: translateY(-10vh);
+//     }
 
-    100% {
-        transform: translateY(102vh);
-    }
-}
+//     100% {
+//         transform: translateY(102vh);
+//     }
+// }
 
-@keyframes scrollUp3 {
-    0% {
-        transform: translateY(-10vh);
-    }
+// @keyframes scrollUp3 {
+//     0% {
+//         transform: translateY(-10vh);
+//     }
 
-    100% {
-        transform: translateY(1vh);
-    }
-}
+//     100% {
+//         transform: translateY(1vh);
+//     }
+// }
 
-@keyframes appear {
-    to {
-        visibility: visible;
-    }
-}
+// @keyframes appear {
+//     to {
+//         visibility: visible;
+//     }
+// }
 
-@keyframes dissappear {
-    to {
-        visibility: hidden;
-    }
-}
+// @keyframes dissappear {
+//     to {
+//         visibility: hidden;
+//     }
+// }
 
 
 
@@ -290,10 +290,10 @@ body {
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    visibility: hidden;
-    animation: appear 1s 15s forwards;
+    // visibility: hidden;
+    // animation: appear 1s 15s forwards;
     /* Animation to make it visible after 10s */
-    margin-top: .5rem;
+    margin-top: 2rem;
     /* Start hidden */
 
 }
@@ -302,8 +302,9 @@ body {
     width: 60px;
     margin-bottom: .3rem;
     margin-right: .3rem;
-    visibility: hidden;
-    animation: appear 1s 16s forwards;
+    z-index: 15;
+    // visibility: hidden;
+    // animation: appear 1s 16s forwards;
 }
 
 .icons:hover {
@@ -316,6 +317,8 @@ body {
     justify-content: center;
     width: 75%;
     margin: 0 auto;
+    z-index: 15;
+    margin-top: 1rem;
     align-items: center;
 }
 
@@ -325,106 +328,106 @@ body {
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    visibility: hidden;
-    animation: appear 1s 15s forwards;
-    margin-top: 5rem;
+    // visibility: hidden;
+    // animation: appear 1s 15s forwards;
+    // margin-top: 5rem;
     /* Animation to make it visible after 10s */
 
     /* Start hidden */
 
 }
 
-.scrollUpText {
-    animation: scrollUp 10s 0.1s 1 forwards;
-}
+// .scrollUpText {
+//     animation: scrollUp 10s 0.1s 1 forwards;
+// }
 
-.scrollUpIcons {
-    animation: scrollDown 3s 3s 1 forwards;
-}
+// .scrollUpIcons {
+//     animation: scrollDown 3s 3s 1 forwards;
+// }
 
-.scrollDownBanner {
-    animation: scrollDown3 3s 3s 1 forwards;
-}
+// .scrollDownBanner {
+//     animation: scrollDown3 3s 3s 1 forwards;
+// }
 
-.scrollDownContact {
-    animation: scrollDown4 3s 3s 1 forwards;
-}
+// .scrollDownContact {
+//     animation: scrollDown4 3s 3s 1 forwards;
+// }
 
-.scrollUpSkillset {
-    animation: scrollDown2 3s 3s 1 forwards;
-}
+// .scrollUpSkillset {
+//     animation: scrollDown2 3s 3s 1 forwards;
+// }
 
-.visibleSkillBanner {
-    visibility: visible !important;
-}
+// .visibleSkillBanner {
+//     visibility: visible !important;
+// }
 
-.visibleIcon {
-    visibility: visible !important;
-}
+// .visibleIcon {
+//     visibility: visible !important;
+// }
 
-@keyframes scrollDown {
-    0% {
-        transform: translateY(0);
-        visibility: hidden;
-    }
+// @keyframes scrollDown {
+//     0% {
+//         transform: translateY(0);
+//         visibility: hidden;
+//     }
 
-    50% {
-        visibility: visible;
-    }
+//     50% {
+//         visibility: visible;
+//     }
 
-    100% {
-        transform: translateY(50rem);
-        visibility: visible;
-    }
-}
+//     100% {
+//         transform: translateY(50rem);
+//         visibility: visible;
+//     }
+// }
 
-@keyframes scrollDown2 {
-    0% {
-        transform: translateY(0);
-        visibility: hidden;
-    }
+// @keyframes scrollDown2 {
+//     0% {
+//         transform: translateY(0);
+//         visibility: hidden;
+//     }
 
-    50% {
-        visibility: visible;
-    }
+//     50% {
+//         visibility: visible;
+//     }
 
-    100% {
-        transform: translateY(48rem);
-        visibility: visible;
-    }
-}
+//     100% {
+//         transform: translateY(48rem);
+//         visibility: visible;
+//     }
+// }
 
-@keyframes scrollDown3 {
-    0% {
-        transform: translateY(0);
-        visibility: hidden;
-    }
+// @keyframes scrollDown3 {
+//     0% {
+//         transform: translateY(0);
+//         visibility: hidden;
+//     }
 
-    50% {
-        visibility: visible;
-    }
+//     50% {
+//         visibility: visible;
+//     }
 
-    100% {
-        transform: translateY(46rem);
-        visibility: visible;
-    }
-}
+//     100% {
+//         transform: translateY(46rem);
+//         visibility: visible;
+//     }
+// }
 
-@keyframes scrollDown4 {
-    0% {
-        transform: translateY(0);
-        visibility: hidden;
-    }
+// @keyframes scrollDown4 {
+//     0% {
+//         transform: translateY(0);
+//         visibility: hidden;
+//     }
 
-    50% {
-        visibility: visible;
-    }
+//     50% {
+//         visibility: visible;
+//     }
 
-    100% {
-        transform: translateY(42rem);
-        visibility: visible;
-    }
-}
+//     100% {
+//         transform: translateY(42rem);
+//         visibility: visible;
+//     }
+// }
 
 .next--button {
     width: 100px;
